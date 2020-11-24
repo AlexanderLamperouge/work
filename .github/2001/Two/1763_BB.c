@@ -2,10 +2,10 @@
 
 int main(void)
 {
-    float a;
-    float sum;
+    double a;
+    double sum;
 
-    while (scanf("%f", &a) != EOF)
+    while (scanf("%lf", &a) != EOF)
     {
         sum = 0;
         
@@ -45,7 +45,7 @@ int main(void)
 
         sum = a - sum;
 
-        printf("%.2f\n", sum);    
+        printf("%.2lf\n", sum);    
 
     }   
 

@@ -2,10 +2,10 @@
 
 int main(void)
 {
-    float a, b;
-    float sum;
+    double a, b;
+    double sum;
 
-    while (scanf("%f", &a) != EOF)
+    while (scanf("%lf", &a) != EOF)
     {
         sum = 0;
         b = a;
@@ -81,7 +81,7 @@ int main(void)
 
         sum = b - sum;
 
-        printf("%.2f\n", sum);    
+        printf("%.2lf\n", sum);    
 
     }   
 

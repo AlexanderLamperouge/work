@@ -2,20 +2,20 @@
 
 int main(void)
 {
-  float a, b;
-
-  float standardList[6] = {80000,55000,35000,25000,12000,3000};
-  float rateList[7]   = {0.45,0.35,0.30,0.25,0.20,0.10,0.03};
-  float incomeList[7]  = {0,0,0,0,0,0,0};
-  float money = 0;
+  double a, b;
   
   int  i;
   
-  
-  while(scanf("%f",&a) != EOF)
+  while(scanf("%lf",&a) != EOF)
   {
+    double standardList[6] = {80000,55000,35000,25000,12000,3000};
+    double rateList[7]   = {0.45,0.35,0.30,0.25,0.20,0.10,0.03};
+    double incomeList[7]  = {0,0,0,0,0,0,0};
+    double money = 0;
+
     money = 0;
     b = a;
+
     for(i=0;i<6;i++)
     {
       if(a>=standardList[i])
@@ -30,9 +30,6 @@ int main(void)
       money += rateList[i] * incomeList[i];
 
     //output result
-    printf("%.2f\n", b - money);
+    printf("%.2lf\n", b - money);
   }  
-
-
-  
 }
